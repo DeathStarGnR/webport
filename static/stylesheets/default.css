@@ -1,14 +1,350 @@
-
-body {
-    background-color: black;
+*{
+    box-sizing: border-box;
 }
 
-#main {
-    text-align: center;
-    font-size: 28px;
-    max-width: 75%;
-    margin: 0 auto;
-    background-color: red;
-    color: white;
+body {
+    
+    margin-top: 0;
+    background-color: white;
+}
 
+#header {
+    text-align: center;
+    font-size: 20px;
+    max-width: 65%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: rgb(31, 46, 131);
+    color: white;
+    padding-top: 30px;
+    background-image: url('../Images/negativespace.jpg');
+    background-size: cover;
+}
+
+.fixed {
+    position: fixed;
+}
+#titleCode {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#titleCursive {
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+}
+
+.container {
+    max-width: 65%;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: white;
+}
+#logo {
+    font-size: 12px;
+    background-color: rgba(23, 28, 52, 0.9);
+    max-width: 25%;
+    margin-right: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 500px;
+    float: left;
+    
+}
+
+
+#logoPic {
+    max-width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#myName {
+    font-size: 20px;
+    
+}
+
+#myTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+}
+
+#asideText {
+    
+    font-size: 14px;
+    margin: 15px;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: justify;
+}
+
+#headerText {
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+}
+
+nav {
+    font-family: 'Orbitron', sans-serif;
+    max-width: 65%;
+    background-color: blue;
+    margin: 0 auto;
+    text-align: center;
+}
+ul.navbar {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(71, 67, 62);
+}
+
+/* Float the list items side by side */
+ul.navbar li {
+    display: inline;
+}
+
+/* Style the links inside the list items */
+ul.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 14px;
+    
+}
+ul.navbar li.active a {
+    border-bottom: 3px solid rgb(77, 105, 171);
+    }
+/* Change background color of links on hover */
+ul.navbar li a:hover {
+    background-color: rgb(83, 83, 83);
+    
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.navbar li.icon {
+    display: none;
+}
+
+/*Beginning of Slideshow CSS*/
+#slideshow {
+    display: flex;
+	flex-wrap: wrap;
+    max-width: 80%;
+    height: 250px;
+    box-shadow: 1px 1px 15px rgb(71, 67, 62);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+#slide_1 {
+    background-image: url('../Images/image01.jpg');
+}
+
+#slide_2 {
+    background-image: url('../Images/image02.jpg');
+}
+
+#slide_3 {
+    background-image: url('../Images/image03.jpg');
+}
+
+#slideBack, #slideNext {
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    top: calc(50% - 30px);
+    z-index: 100;
+}
+
+#slideBack:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightyellow;
+}
+
+#slideNext:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightyellow;
+}
+
+#slideNext {
+    right: 0;
+}
+
+#slideBack {
+    left: 0;
+}
+
+#iconLinks {
+    max-width: 80%;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(71, 67, 62);
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.unicons {
+    margin-right: 15px;
+    width: calc((100% - 30px) / 3);
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgb(71, 67, 62);
+    float: left;
+    
+}
+.uniconTitle {
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.unicons:last-of-type {
+    margin-right: 0;
+}
+.fa_icon {
+    font-size: 70px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-shadow: 2px 5px 7px rgb(71, 67, 62);
+}
+.infoBoxText {
+    margin: 10px auto;
+    padding: 5px 0;
+    max-width: 60%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-top: 1px solid rgb(71, 67, 62);
+    border-bottom: 1px solid rgb(71, 67, 62);
+}
+
+footer {
+    clear: both;
+    color: white;
+    border: 10px solid rgb(23, 28, 52);
+    background-color: rgb(23, 28, 52);
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50px;
+    display: flex;
+}
+
+#techBlock1 {
+    width: 60%;
+    position: relative;
+
+    background-color: rgb(23, 28, 52);
+    color: lightgrey;
+    padding-top: 2px;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+#copyrightText {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+}
+#techBlock2 {
+    width: 40%;
+
+    background-color: white;
+    color: rgb(23, 28, 52);
+    padding: 0 5px;
+    padding-top: 2px;
+    font-size: 42px;
+    text-align: center;
+    border-radius: 25px;
+    
+    
+
+
+}
+/*End of Slideshow CSS*/
+@media screen and (max-width:800px) {
+    #header {
+        max-width: 100%;
+        height: 100px;
+    }
+    #myName {
+        font-size: 14px;
+    
+    }
+    .container {
+        max-width: 100%;
+    
+    }
+    #myTitle {
+        display: none;
+    }
+    #titleCode {
+        font-size: 28px;
+    }
+    #titleCursive{
+        font-size: 26px;
+    }
+    #slideshow {
+        max-width: 100%;
+    }
+    nav {
+        max-width: 100%;
+    }
+
+    #headerText {
+        max-width: 300px;
+    
+    }
+}
+@media screen and (max-width:680px) {
+    #headerText {
+        max-width: 200px;
+    }
+        
+    #myName {
+        font-size: 12px;
+    
+    }
+    ul.navbar li {
+        display: none;
+    }
+
+    ul.navbar li.icon {
+        display: inline-block;
+    }
+
+    ul.navbar.collapse {
+        position: relative;
+    }
+
+    ul.topnav.collapse li.icon {
+        position: absolute;
+        top: 0;
+    }
+
+    ul.navbar.collapse li {
+        float: none;
+        display: inline;
+    }
+
+    ul.navbar.collapse li a {
+        display: block;
+        text-align: center;
+    }
 }

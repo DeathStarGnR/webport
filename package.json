@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/DeathStarGnR/webport#readme",
   "dependencies": {
-    "express": "4.x"
+    "express": "4.x",
+    "formidable": "1.x",
+    "mysql": "2.X"
   }
 }
