@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Design Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Satisfy|Source+Sans+Pro" rel="stylesheet">
+    <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/devicons.css" rel="stylesheet" />
+    <link href="stylesheets/default.css" rel="stylesheet" />
+    <link href="stylesheets/projects.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/default.js"></script>
+    <script src="Scripts/projects.js"></script>
+</head>
+<body>
+    <div id="header">
+
+        <div id="headerText">
+            <span id="titleCode">Web Design</span><br />
+            <span id="titleCursive">Portfolio</span><br />
+        </div>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+    <div role="main" class="container boxxed">
+        <div id="pageContainer">
+            <h1>Projects</h1>
+            <hr />
+            <div id="result">These are some of the projects I have worked on.</div>
+            <hr />
+            <div class="row">
+                <div class="col projectDiv left">
+                    <div class="shadow">
+                        <div class="divTitle">Capstone ePortfolio</div>
+                        <div id="wpsite" class="inner">
+                            <a href="http://nsbailey2010.wordpress.com" target="_blank"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="ePort">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col projectDiv">
+                    <div class="shadow">
+                        <div class="divTitle">Javascript Calculator</div>
+                        <div id="calc" class="inner">
+                            <a href="calculator.html"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="Calc">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col projectDiv">
+                    <div class="shadow">
+                        <div class="divTitle">Picture Scramble</div>
+                        <div id="picScramble" class="inner">
+                            <a href="picscramble.html"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="Scram">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col projectDiv">
+                    <div class="shadow">
+                        <div class="divTitle">Quote Generator</div>
+                        <div id="quoteGen" class="inner">
+                            <a href="quote.html"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="Quote">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col projectDiv">
+                    <div class="shadow">
+                        <div class="divTitle">Local Weather App</div>
+                        <div id="weatherDiv" class="inner">
+                            <a href="weather.html"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="Weather">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col projectDiv">
+                    <div class="shadow">
+                        <div class="divTitle">Wikipedia Search</div>
+                        <div id="wikiDiv" class="inner">
+                            <a href="wikiviewer.html"><div class="divBtn view">View Project</div></a>
+                            <div class="divBtn info" data-name="Wiki">Read Details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalePort" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">Capstone ePortfolio</h1><hr />
+                <div class="modalText">My ePortfolio site was created as the capstone
+                 achievement for my Masters of Information Science. It was selected to win
+                 the Outstanding ePortfolio award for 2016.
+                 It contains much of my academic work, as well as further examples
+                 of my projects that relate to Information Architecture,
+                 Content Management Systems, and database design.
+
+                </div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="http://nsbailey2010.wordpress.com" target="_blank">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modalCalc" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">JavaScript Calculator</h1><hr />
+                <div class="modalText">This is a simple calculator that I made while learning JavaScript.
+                The user interface of the calculator was created using HTML and styled with css,
+                 the functionality was coded using only JavaScript.
+                 Through this project, I learned a great deal about using events and event listeners,
+                 as well as the importance of logic planning.</div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="calculator.html">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modalScram" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">Picture Scramble</h1><hr />
+                <div class="modalText">This is the second version of Picture Scramble.
+                 The first version made use of the HTML5 data transfer API to switch the tiles, which
+                 relied on a dragStart event to begin the transfer. While this approach worked great on a PC,
+                 it proved to be problematic for mobile or touch devices since the dragStart was depedant on a
+                 mouse click event. To solve this issue, I used the JQuery UI library and Touch Punch which did
+                 an excellent job of providing touch functionality. Both versions make use of JavaScript and
+                 JQuery to generate the puzzle in an empty HTML div element called “board” when the page loads.
+                 The source code for each version is available through my GitHub repository.
+                </div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="picscramble.html">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modalQuote" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">Quote Generator</h1><hr />
+                <div class="modalText">I created this quote generator as one of the zipline challenges from
+                 FreeCodeCamp. It was my first hands on experience creating an interface that communicated with
+                 a third party API. The app makes a request to <a href="https://quotesondesign.com/" target="_blank">Quotes on Design</a> for a random quote and receives
+                 the quote in the form of a JSON object. The data is then formatted and displayed in the textbox
+                 on the user interface where it can then be tweeted by clicking the tweet button.
+                </div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="quote.html">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modalWeather" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">Local Weather</h1><hr />
+                <div class="modalText">This app makes use of geolocation to determine the users coordinates and then makes
+                 a call to the OpenWeather API to retrieve the local weather information in the form of a JSON object. It then
+                 displays the information along with a background image and icon appropriate to the weather conditions.
+                 Images are courtesy of <a href="https://pixabay.com/" target="_blank">Pixabay</a> and the icons are from the
+                 <a href="https://erikflowers.github.io/weather-icons/" target="_blank">Weather Icons</a> open-source icon font project.
+                </div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="weather.html">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="modalWiki" class="modal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <h1 class="modalTitle">Wikipedia Search</h1><hr />
+                <div class="modalText">This app uses the Wikipedia API to retrieve the first ten results related to the users search
+                 criteria. Through creating this app, I learned a great deal about how API’s work as well as query formulation to
+                 retrieve only the desired information. The MediaWiki and Wikipedia API’s offer an impressive amount of flexibility
+                 and search customization options.
+                </div>
+                <hr />
+                <div class="buttonBar">
+                    <div id="btnBack" class="btnModalNav btnBack">Back to Projects</div>
+                    <a href="wikiviewer.html">
+                        <div id="btnView" class="btnModalNav btnView">View This Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="techBlock1">
+                <span id="copyrightText">&#169; 2016, Nathaniel Bailey, All Rights Reserved.</span>
+            </div>
+            <div id="techBlock2">
+                <i class="devicons devicons-html5"></i>
+                <i class="devicons devicons-css3"></i>
+                <i class="devicons devicons-javascript"></i>
+                <i class="devicons devicons-nodejs_small"></i>
+                <i class="devicons devicons-github"></i>
+                <i class="devicons devicons-redhat"></i>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

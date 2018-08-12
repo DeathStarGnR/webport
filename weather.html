@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Design Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Satisfy|Source+Sans+Pro" rel="stylesheet">
+    <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/devicons.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/weather-icons-wind.min.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="stylesheets/default.css" rel="stylesheet" />
+    <link href="stylesheets/weather.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/default.js"></script>
+    <script src="Scripts/weather.js"></script>
+    <script src="Scripts/weatherIcons.js"></script>
+</head>
+<body>
+    <div id="header">
+
+        <div id="headerText">
+            <span id="titleCode">Web Design</span><br />
+            <span id="titleCursive">Portfolio</span><br />
+        </div>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+    <div role="main" class="container boxxed">
+        <div class="row">
+            <div id="heading" class="content">
+
+                <h1><strong>Weather Wizard</strong></h1>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div id="city"></div>
+            <div id="weatherIcon"></div>
+            <div class="temp"><span id="temp"></span><span id="symbol">&#176; </span><span id="units">F</span></div>
+            <div id="conditions"></div>
+            <div id="hilo">High: <span id="high"></span>&#176; / Low: <span id="low"></span>&#176;</div>
+            
+        </div>
+
+
+    </div>
+    <footer>
+        <div id="techBlock1">
+            <span id="copyrightText">&#169; 2016, Nathaniel Bailey, All Rights Reserved.</span>
+        </div>
+        <div id="techBlock2">
+            <i class="devicons devicons-html5"></i>
+            <i class="devicons devicons-css3"></i>
+            <i class="devicons devicons-javascript"></i>
+            <i class="devicons devicons-nodejs_small"></i>
+            <i class="devicons devicons-github"></i>
+            <i class="devicons devicons-redhat"></i>
+        </div>
+    </footer>
+</body>
+</html>

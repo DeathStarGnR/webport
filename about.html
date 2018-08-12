@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Design Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Satisfy|Source+Sans+Pro" rel="stylesheet">
+    <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/devicons.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/weather-icons-wind.min.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome-4.7.0/css/weather-icons.min.css" rel="stylesheet" />
+    <link href="stylesheets/default.css" rel="stylesheet" />
+    <link href="stylesheets/about.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/default.js"></script>
+    <script src="Scripts/wikiviewer.js"></script>
+</head>
+<body>
+    <div id="header">
+
+        <div id="headerText">
+            <span id="titleCode">Web Design</span><br />
+            <span id="titleCursive">Portfolio</span><br />
+        </div>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);">&#9776;</a>
+            </li>
+        </ul>
+    </nav>
+    <div role="main" class="container boxxed">
+        
+        <div id="aboutMeText" class="aboutContent">
+            <hr />
+            <h1> About Me</h1>
+            <hr />
+            <p>I became interested in web design while working on my Master’s of Information Science
+             at the University of Tennessee, Knoxville. Throughout my curriculum there, I studied
+             many aspects of web design. I learned not only how to code for the web using HTML and
+             CSS, but also how to implement best practices such as mobile first and responsive design.
+             Much of my coursework also focused on the study of Human-Computer Interaction which
+             involved performing usability studies for existing sites and developing redesigns using
+             HCI principles and Information Architecture. I also gained considerable experience
+             building sites using the three leading Content Management Systems: WordPress, Joomla,
+             and Drupal.</p>
+
+            <p>Along with undergraduate work in Computer Science and Business Administration, my academic
+             career has provided me with a firm foundation in modern technology and business. Since
+             completing my MIS in May of 2016, I have been focused on the study of programming languages
+             and full stack web development.</p> 
+        </div>
+        
+        <div id="aboutSiteText" class="aboutContent">
+            <hr />
+            <h1> About This Site</h1>
+            <hr />
+            <p>I created this site as a place to practice new techniques as well as showcase projects
+             that I have worked on. This of course means that the site will likely always be in a
+             constant state of change, however, I make every effort to ensure that the live version
+             of the site is always working. To accomplish that, I do the site development and testing
+             in a local environment and use a mirrored Git repository for version control. Changes
+             are then pushed to the live site once they are ready to be published.</p>
+
+            <p>The site uses the Express framework running in a Node.js environment hosted on Redhat’s
+             OpenShift and is linked to a mySQL database. A Node.js package called mysql is used to
+             enable the server to communicate with the database, and a package named formidable is
+             used for form aggregation. Site functionality is accomplished using JavaScript along
+             with the JQuery and JQuery UI libraries. The icon font libraries FontAwesome and
+             Devicons are also used where applicable.</p>   
+        </div>
+        
+    </div>
+    <footer>
+        <div id="techBlock1">
+            <span id="copyrightText">&#169; 2016, Nathaniel Bailey, All Rights Reserved.</span>
+        </div>
+        <div id="techBlock2">
+            <i class="devicons devicons-html5"></i>
+            <i class="devicons devicons-css3"></i>
+            <i class="devicons devicons-javascript"></i>
+            <i class="devicons devicons-nodejs_small"></i>
+            <i class="devicons devicons-github"></i>
+            <i class="devicons devicons-redhat"></i>
+        </div>
+    </footer>
+</body>
+</html>
