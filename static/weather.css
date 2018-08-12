@@ -1,0 +1,96 @@
+﻿.boxxed {
+    background-color: grey;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+        
+}
+
+#heading {
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 50%;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#display {
+    margin: 0 auto;
+}
+
+#weatherIcon {
+    font-size: 75px;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+#city {
+    font-size: 42px;
+    padding-top: 10px;
+}
+
+.temp {
+    font-size: 48px;
+}
+
+#conditions {
+    font-size: 32px;
+}
+
+#hilo {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#units {
+    color: rgb(0, 255, 144);
+}
+
+#units:hover {
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width:680px) {
+
+    .content {
+    
+    width: 70%;
+    
+    
+}
+
+#weatherIcon {
+    font-size: 50px;
+    
+}
+
+#city {
+    font-size: 32px;
+    
+}
+
+.temp {
+    font-size: 40px;
+}
+
+#conditions {
+    font-size: 28px;
+}
+
+#hilo {
+    font-size: 20px;
+    
+}
+
+}

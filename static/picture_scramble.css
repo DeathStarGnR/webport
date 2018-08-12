@@ -1,0 +1,76 @@
+﻿
+
+#message {
+    text-align: center;
+}
+
+#gameBoard {
+    
+    height: 324px;
+    width: 324px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+}
+
+#btnScramble {
+    width: 300px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+
+#btnShowNum {
+    width: 300px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+#buttonBar {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.tile {
+    background-color: gray;
+    height: 80px;
+    width: 80px;
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    margin: 2px;
+}
+
+.square {
+    background-color: black;
+    
+    height: 80px;
+    width: 80px;
+    float: left;
+   
+}
+
+.dragged {
+    background-color: red;
+}
+
+#test {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+#test3 {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#test2 {
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+    color: white;
+}

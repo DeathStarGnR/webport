@@ -6,6 +6,8 @@ $(document).ready(function () {
     $('.icon').click(toggleCollapse);
     
     slideshowInit();
+    window.setInterval(nextSlide, 5000)
+
 });
 
 var slideNum;

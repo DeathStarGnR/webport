@@ -1,0 +1,34 @@
+﻿body {
+}
+
+.row {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   
+
+}
+
+.col66 {
+   width: 66%;
+   height: 300px;
+}
+
+.red {
+    background-color: red;
+    width: 33%;
+    height: 300px;
+    
+}
+
+.blue {
+    background-color: blue;
+    
+     height: 150px;
+}
+
+.green {
+    background-color: yellow;
+    
+     height: 150px;
+}

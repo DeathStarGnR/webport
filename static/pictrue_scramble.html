@@ -8,10 +8,12 @@
     <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="stylesheets/font-awesome-4.7.0/css/devicons.css" rel="stylesheet" />
     <link href="stylesheets/default.css" rel="stylesheet" />
-    <link href="contact.css" rel="stylesheet" />
+    <link href="picture_scramble.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="Scripts/jquery-ui-touch-punch.js"></script>
     <script src="Scripts/default.js"></script>
-    <script src="Scripts/contact.js"></script>
+    <script src="Scripts/picture_scramble.js"></script> 
 </head>
 <body>
     <div id="header">
@@ -25,7 +27,7 @@
         <ul class="navbar">
             <li><a href="/">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#">About</a></li>
             <li class="active"><a href="contact.html">Contact</a></li>
             <li class="icon">
                 <a href="javascript:void(0);">&#9776;</a>
@@ -33,40 +35,17 @@
         </ul>
     </nav>
     <div role="main" class="container boxxed">
-        <div id="contactMe">
-            <h1>Contact Information</h1>
-            <hr />
-            <div id="result">To contact me with any questions or comments, simply fill out the form below.</div>
-            <hr />
-            <form id="contactForm" name="ContactForm" method="post" action="/ContactMessage">
-                <div>
-                    <label for="firstName">First Name:</label><br />
-                    <input type="text" id="firstName" class="inputElement" name="firstName" required="required" />
-                </div>
-                <div>
-                    <label for="lastName">Last Name:</label><br />
-                    <input type="text" id="lastName" class="inputElement" name="lastName" required="required" />
-                </div>
-                <div>
-                    <label for="email">Email Address:</label><br />
-                    <input type="email" id="email" class="inputElement" name="email" required="required" />
-                </div>
-                <div>
-                    <label for="message">Message:</label><br />
-                    <textarea id="message" class="inputElement" name="message" required="required"></textarea>
-                </div>
-                <div>
-                    <button type="button" id="submit" name="submit">Submit</button>
-                </div>
-            </form>
-            
+        <h1 id="message"></h1>
+        
+        
+        <div id="gameBoard">
+
         </div>
-    
-
-        
-
-        
-        
+        <div id="buttonBar">
+            <button id="btnScramble">SCRAMBLE</button>
+            <br />
+            <button id="btnShowNum">TOGGLE NUMBERS</button>
+        </div>
         <footer>
             <div id="techBlock1">
                 <span id="copyrightText">&#169; 2016, Nathaniel Bailey, All Rights Reserved.</span>
@@ -82,6 +61,6 @@
         </footer>
 
     </div>
-
+    
 </body>
 </html>

@@ -1,0 +1,70 @@
+﻿.boxxed {
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px rgb(71, 67, 62);
+    padding-bottom: 50px;
+}
+
+#title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#board {
+    width: 328px;
+    height: 328px;
+    background-color: black;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.square {
+    width: 82px;
+    height: 82px;
+    
+    background-color: black;
+    float: left;
+    color: white;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    margin: 1px;
+    color: white;
+    background-color: blue;
+    font-size: 24px;
+    
+}
+
+.hovered {
+    background-color: grey;
+}
+
+.b {
+    width: 328px;
+    height: 48px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(30, 51, 96);
+ 
+}
+#buttonBar {
+    width: 328px;
+    margin: 10px auto;
+}
+
+.b:hover {
+    cursor: pointer;
+    background-color: rgb(48, 72, 128);
+}
+
+.num {
+    background-color: rgba(0, 0, 0, .5)
+}

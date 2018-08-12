@@ -54,3 +54,9 @@ label {
     background-color: rgb(48, 72, 128);
     cursor: pointer;
 }
+
+@media screen and (max-width:800px) {
+    #contactMe {
+        width: 95%;
+    }
+}
